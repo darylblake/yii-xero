@@ -11,19 +11,19 @@ Currently only Invoices & Contacts are fully coded, and the extension only suppo
 To use, add the component to your config file as follows:
 
 
-'xero' => array(
-                'class' => 'ext.yii-xero.components.Xero',
-                'appType' => 'private',
-                'oAuthCallback' => 'http://localhost/xero/xero/auth', //oauth callback field - not needed for private apps
+    'xero' => array(
+      'class' => 'ext.yii-xero.components.Xero',
+      'appType' => 'private',
+       'oAuthCallback' => 'http://localhost/xero/xero/auth', //oauth callback field - not needed for private apps
 
-                'signatures' =>  array(
-                    // local
-                    'consumer_key' => (consumer key),
-                    'shared_secret' => (shared secret),
-                    //certificates
-                    'rsa_private_key' => (private key),
-                    'rsa_public_key'	=> (public key),
-                )),
+        'signatures' =>  array(
+        // local
+        'consumer_key' => (consumer key),
+        'shared_secret' => (shared secret),
+        //certificates
+        'rsa_private_key' => (private key),
+        'rsa_public_key'	=> (public key),
+    )),
 
 Here is an example of how to create a contact using the component:
 
